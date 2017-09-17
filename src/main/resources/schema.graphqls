@@ -1,0 +1,18 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Employee {
+  name: String!
+  project: String!
+}
+
+type Query {
+  allEmployees: [Employee]
+}
+
+type Mutation {
+  createEmployeek(name: String!, project: String!): Employee
+}
+
